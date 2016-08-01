@@ -129,6 +129,13 @@ Configuração do pom.xml:
 			    <version>5.1.26</version>
 		    </dependency>
 		    
+		    <!-- https://mvnrepository.com/artifact/junit/junit -->
+		   <dependency>
+    			   <groupId>junit</groupId>
+    			   <artifactId>junit</artifactId>
+    			   <version>4.12</version>
+		</dependency>
+		    
 		    <dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
