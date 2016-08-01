@@ -15,7 +15,7 @@ O projeto é criado a partir de uma ferramenta denominada MAVEN, desenvolvida e 
 	Vantagens de usar Maven:
 		Centralizar Libraries;
 		Manutensão em Projetos Compartilhados;
-		Vasta quantidade de libraries disponiveis.
+		Vasta quantidade de libraries disponíveis.
 	
 
 
@@ -97,7 +97,7 @@ Instruções de Criação do Projeto no Eclipse:
     Observações Importantes: 
     
         Preencher groupOd como :     "br.ufal.ic"
-        Preencher artifactId como :  "crudLearningJPA"
+        Preencher artifactId como :  "curse"
 
 Configuração do pom.xml:
 
