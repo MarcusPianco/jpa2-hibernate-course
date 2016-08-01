@@ -120,12 +120,6 @@ Configuração do pom.xml:
 	    <dependencies>
 
 		    <dependency>
-			    <groupId>org.hibernate</groupId>
-			    <artifactId>hibernate-core</artifactId>
-			    <version>5.0.0.Final</version>
-		    </dependency>
-
-		    <dependency>
 			    <groupId>mysql</groupId>
 			    <artifactId>mysql-connector-java</artifactId>
 			    <version>5.1.26</version>
@@ -136,37 +130,6 @@ Configuração do pom.xml:
 			<artifactId>hibernate-core</artifactId>
 			<version>5.0.0.Final</version>
 		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-annotations</artifactId>
-			<version>3.5.6-Final</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-commons-annotations -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-commons-annotations</artifactId>
-			<version>3.3.0.ga</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/javax.transaction/jta -->
-		<dependency>
-			<groupId>javax.transaction</groupId>
-			<artifactId>jta</artifactId>
-			<version>1.1</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.jboss.spec.javax.transaction</groupId>
-			<artifactId>jboss-transaction-api_1.1_spec</artifactId>
-			<version>1.0.0.Final</version>
-		</dependency>
-		
-		    <dependency>
-		    	<groupId>junit</groupId>
-			    <artifactId>junit</artifactId>
-			    <version>3.8.1</version>
-			    <scope>test</scope>
-		    </dependency>
 		
 	    </dependencies>
 	
