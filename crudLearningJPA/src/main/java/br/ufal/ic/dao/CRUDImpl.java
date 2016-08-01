@@ -19,7 +19,6 @@ public class CRUDImpl{
 
 	public void addInstance(User instance) {
 		session = sessionFactory.openSession();
-		List<User> list = null;
 
 		try {
 			session.beginTransaction();
@@ -39,7 +38,23 @@ public class CRUDImpl{
 	public void updateInstance(User instance) {
 
 		session = sessionFactory.openSession();
-		List<User> list = null;
+
+		try {
+			session.beginTransaction();
+			session.update(instance);
+			session.getTransaction().commit();
+			session.close();
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+
+		}
+
+	}
+	
+	public void updateInstance(User instance) {
+
+		session = sessionFactory.openSession();
 
 		try {
 			session.beginTransaction();
@@ -51,14 +66,6 @@ public class CRUDImpl{
 			session.getTransaction().rollback();
 
 		}
-
-	}
-
-	public void removeInstance(Object instance) {
-
-	}
-
-	public void removeInstance(int identify) {
 
 	}
 
