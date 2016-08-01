@@ -5,10 +5,11 @@ Curso Introdutório de JPA/Hibernate ministrado para a Turma de ciências da Com
 Este Curso tem o propósito de demonstrar de maneira  prática o uso de JPA/Hibernate para a persistência de dados em um Data Base.
 
 Aplicações e Frameworks utilizadas durante o Curso:
-  JDK 8,
-  Eclipse SDK,
-  MySql,
-  Hibernate;
+
+  	JDK 8,
+  	Eclipse SDK,
+	MySql,
+  	Hibernate;
   
 O projeto é criado a partir de uma ferramenta denominada MAVEN, desenvolvida e mantida pela Apache e integrada a muitos SDks tais como Eclipse, ItelliJ IDE e outros. A ferramenta Maven tem o propósito gerenciar as dependências e automatizar seus builds. Suas configurações são editadas e acessadas pelo file  pom.xml  contido na pasta raiz de um dado projeto.
 
