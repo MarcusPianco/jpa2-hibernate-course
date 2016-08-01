@@ -10,17 +10,47 @@ import org.hibernate.cfg.Configuration;
 import br.ufal.ic.model.User;
 
 @SuppressWarnings("rawtypes")
-public class CRUDImpl implements CRUD {
+public class CRUDImpl{
 
 	final ThreadLocal<Session> threadLocal = new ThreadLocal<Session>();
-	final SessionFactory sessionFactory = new Configuration().configure("./META-INF/hibernate.cfg.xml").buildSessionFactory();
+	final SessionFactory sessionFactory = new Configuration().configure("./META-INF/hibernate.cfg.xml")
+			.buildSessionFactory();
 	Session session = threadLocal.get();
 
-	public void addInstance(Object instance) {
+	public void addInstance(User instance) {
+		session = sessionFactory.openSession();
+		List<User> list = null;
+
+		try {
+			session.beginTransaction();
+			session.save(instance);
+			session.getTransaction().commit();
+			session.close();
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+
+		}
 
 	}
 
-	public void updateInstance(Object instance) {
+	
+
+	public void updateInstance(User instance) {
+
+		session = sessionFactory.openSession();
+		List<User> list = null;
+
+		try {
+			session.beginTransaction();
+			session.delete(instance);
+			session.getTransaction().commit();
+			session.close();
+		} catch (HibernateException e) {
+			e.printStackTrace();
+			session.getTransaction().rollback();
+
+		}
 
 	}
 
@@ -51,7 +81,7 @@ public class CRUDImpl implements CRUD {
 		return list;
 
 	}
-	
+
 	public static CRUDImpl getInstance() {
 		return new CRUDImpl();
 	}
