@@ -98,7 +98,10 @@ Instruções de Criação do Projeto no Eclipse:
     Observações Importantes: 
     
         Preencher groupOd como :     "br.ufal.ic"
-        Preencher artifactId como :  "curse"
+        Preencher artifactId como :  "crudLearningJPA"
+        
+        :. As Informações acima podem ser editadas sem maiores prejuizos.
+
 
 Configuração do pom.xml:
 
