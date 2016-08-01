@@ -1,4 +1,4 @@
-# jpa2-hibernate-curse
+# jpa2-hibernate-course
 
 Curso Introdutório de JPA/Hibernate ministrado para a Turma de ciências da Computação do Instituto de Computação - UFAL 
 
