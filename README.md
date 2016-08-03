@@ -155,6 +155,12 @@ Referências:
     http://www.devmedia.com.br/instalando-e-configurando-a-nova-versao-do-mysql/25813
     http://docs.jboss.org/hibernate/orm/5.2/quickstart/html_single/#obtaining
     
+    Curso JPA Youtube:
+    
+    https://www.youtube.com/watch?v=fmTbTgW19D0&index=1&list=PL8R29l8KkRsjQDEjRm6laLT2oa8YtalUx
+    
+    
+    
     
     
 
